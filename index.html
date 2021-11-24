@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="author" content="박한비">
+    <meta name="description" content="박한비의 포트폴리오 사이트">
+    <meta name="keywords" content="웹퍼블리셔, 웹접근성, 반응형사이트, HTML5, WEB">
+    <title>박한비의 PORTFOLIO</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900" rel="stylesheet">
+    
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-16.ico">
+    
+    
+    <!--[if IE 8]>
+    <script type="text/javascript">
+        alert("Please Upgrade Your BROWSER !");
+    </script>
+    <![endif]-->
+    <style>
+        .main-box{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color:#F2A0AF;
+            display: none;
+        }
+        .sub-box{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 600px;
+            height: 500px;            
+            background-color: #ffffff;
+            border-radius: 110px;
+            
+        }
+        .main-box h1{            
+            font-size: 30px;
+            font-weight: bolder;
+            color: #3B3E40;
+
+        }
+        .sub-txt{
+            font-size: 20px;
+            font-weight: normal;
+            font-family: baloo;
+            color: #A6767E;
+            padding: 25px;
+            
+
+        }
+        #btn-profile{
+            background-color:#F2A0AF;
+            border-radius: 35px;
+            font-size: 15px;
+            padding: 10px;
+
+        }
+        #btn-hide{
+            right: 40%;
+            font-family: baloo;
+            font-size: 20px;
+            background-color: #ffffff;
+            border-radius: 35px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+   <!-- fixed 영역 -->
+    <div id="top">
+        <h1 class="name">
+            <a href="#">Hanbi Park</a>
+        </h1>
+        <p>hanbi970925@naver.com</p>
+    </div>
+    
+    <div id="bottom">
+        <p>Copyright @ 2021 by HANBI PARK All Right Reserved</p>
+        <div class="sns">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+    <div id="left"></div>
+    <div id="right"></div>
+    <!-- //fixed 영역 -->
+    
+    <!-- intro -->
+    <div id="intro">
+        <div class="content">
+            <span>Creative</span>
+            <h2>PORTFOLIO</h2>
+        </div>
+        
+        <div class="wheel">
+            <div class="mouse"></div>
+            <span>SCROLL DOWN</span>
+        </div>
+    </div>
+    <!-- //intro -->
+    
+    <!-- profile -->
+    <div id="profile">
+        <div class="container">
+            <h3>PROFILE</h3>
+            <div class="card_wrap" data-aos="fade-up">
+                <div class="card c_left">
+                    <div class="front">
+                        <div class="front_content middle">
+                            <h4>EDUCATION</h4>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="back_content middle">
+                            <p>
+                                <span>2016</span>
+                                <em>가림고등학교 졸업</em>
+                            </p>
+                            
+                            <p>
+                                <span>2021</span>
+                                <em>UI/UX멀티미디어 과정 수료</em>
+                            </p>
+                            
+                            <p>
+                                <span>2022</span>
+                                <em>안양대학교 러시아어과 졸업 예정</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card c_middle">
+                    <div class="front">
+                        <div class="front_content middle">
+                            <h4>PROFILE</h4>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="back_content middle">
+                            <span class="avatar"><img src="img/avatar.jpg" alt="프로필사진"></span>
+                            <h4>Park Hanbi</h4>
+                            <em class="p_dec">AGE 25<br>LIVE Incheon<br>hanbi970925@naver.com</em>
+                            <br><input type='button' value='소개서' id="btn-profile">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card c_right">
+                    <div class="front">
+                        <div class="front_content middle">
+                            <h4>QUALIFICATE</h4>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="back_content middle">
+                            <p>
+                                <span>2021</span>
+                                <em>운전면허 1종 보통</em>
+                            </p>
+                            <p>
+                                <span>2022</span>
+                                <em>토르플 기초 과정 취득 예정</em>
+                            </p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //card_wrap-->
+            
+            <div class="main-box my-profile" id="my-profile">
+                <div class="sub-box">
+                    <h1>나를 소개합니다!</h1>
+                    <div class="sub-txt">
+                        <br>
+                        <p>
+                            안녕하세요! <br>
+                            언제나 밝은 신입 웹 퍼블리셔 박한비 입니다. <br>
+                            ‘러시아어를 배웠으면서 퍼블리싱을 왜?’ 하시겠지만 <br> 코로나 시대로 인한
+                            노동시장의 모습이 변화하면서 <br> 저 또한 변화해야겠다고 생각했습니다. <br>
+                            그래서 UI/UX 과정을 이수하였고, 배워보니 쉽지 않은 일임을
+                            알았지만 <br> 저는 더 나아가고자 하는 마음으로 노력하고 있습니다. <br>
+                            또 노력하는 만큼 결과가 나온다는 점에서 <br> 매력을 느끼게 되어
+                            열심히 하려는 마음이 생깁니다. <br>
+                            <br>
+                                활발한 상호소통과 피드백을 좋아합니다. <br>
+                            언제든 편히 문의 주세요! 
+                        </p>
+                        <input type='button' value='X' id="btn-hide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //profile -->
+    
+    <!-- work -->
+    <div id="work">
+        <div class="container">
+            <h3>PORTFOLIO</h3>
+            <div class="work_box">
+                <div class="left_box" data-aos="fade-right">
+                    <img src="img/work1.jpg" alt="작업1" >
+                </div>
+                <div class="right_box" data-aos="fade-left">
+                    <span>WEB RESPONSIVE</span>
+                    <h4>WEB<br>STANDARD</h4>
+                    <a href="https://hanbi0925.github.io/Honsol/" target="_blank" class="view">VIEW SITE</a>
+                </div>
+            </div>
+            
+            <div class="work_box">
+                <div class="left_box2" data-aos="fade-right">
+                    <span>WEB RESPONSIVE</span>
+                    <h4>WEB<br>RESPONSIVE</h4>
+                    <a href="https://hanbi0925.github.io/Hollys1/" target="_blank" class="view">VIEW SITE</a>
+                </div>
+                <div class="right_box2" data-aos="fade-left">
+                    <img src="img/work2.jpg" alt="작업2">
+                </div>
+            </div>
+            
+            <div class="work_box">
+                <div class="left_box" data-aos="fade-right">
+                    <img src="img/work3.jpg" alt="작업3">
+                </div>
+                <div class="right_box" data-aos="fade-left">
+                    <span>WEB RESPONSIVE</span>
+                    <h4>WEB<br>WEB SITE</h4>
+                    <a href="https://hanbi0925.github.io/Indigo/" target="_blank" class="view">VIEW SITE</a>
+                </div>
+            </div>
+            
+            <div class="work_box">
+                <div class="left_box2" data-aos="fade-right">
+                    <span>WEB RESPONSIVE</span>
+                    <h4>WEB<br>WEB SITE</h4>
+                    <a href="https://hanbi0925.github.io/Megabox/" target="_blank" class="view">VIEW SITE</a>
+                </div>
+                <div class="right_box2" data-aos="fade-left">
+                    <img src="img/work4.jpg" alt="작업4">
+                </div>
+            </div>
+            
+            <div class="work_box last">
+                <div class="left_box" data-aos="fade-right">
+                    <img src="img/work5.jpg" alt="작업5" >
+                </div>
+                <div class="right_box" data-aos="fade-left">
+                    <span>WEB RESPONSIVE</span>
+                    <h4>WEB<br>WEB SITE</h4>
+                    <a href="https://hanbi0925.github.io/Tourist/" target="_blank" class="view">VIEW SITE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //work -->
+    
+    <!-- skill -->
+    <div id="skill">
+        <div class="container">
+            <h3>SKILLS</h3>
+            <div class="skill_box">
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/ps.png" alt="포토샵아이콘">
+                        <span>PHOTOSHOP</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1500">
+                        <img src="img/ai.png" alt="일러스트아이콘">
+                        <span>ILLUSTRATOR</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/html.png" alt="html아이콘">
+                        <span>HTML</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="2500">
+                        <img src="img/css.png" alt="css아이콘">
+                        <span>CSS</span>
+                    </li>
+                    <li class="last" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/js.png" alt="js아이콘">
+                        <span>jQuery</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //skill -->
+    
+    <div id="footer">
+        <div class="container type-wrap">
+            <div id="typed-strings">
+                <p>Thank you for visiting<br>my portfolio</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+    </div>
+    
+    <button id="topBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/demos.js"></script>
+    <script src="js/index.js"></script>
+    
+    <script>
+        AOS.init({
+            duration :1200,
+        });
+        $('#btn-profile').click(function(){
+            $('#my-profile').show();
+            $('body').css('overflow','hidden');
+        })
+        $('#btn-hide').click(function(){
+            $('#my-profile').hide();
+            $('body').css('overflow','auto');
+        })
+    </script>
+</body>
+</html>
